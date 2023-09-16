@@ -1,0 +1,164 @@
+{
+  "main": {
+    "id": "ce9329a4deb80b53",
+    "type": "split",
+    "children": [
+      {
+        "id": "4898e3880c52eaa1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "983f8744e17310f2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "5dbb90e2fd5d45af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Binary Encoding.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3a55c03e14d67a9b",
+    "type": "split",
+    "children": [
+      {
+        "id": "2d4cc6552cce9be4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2f5c5ce6e222b4df",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6b0a5bd7d3c48461",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5ce68e02744e17a1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "b5934e59f87d0355",
+    "type": "split",
+    "children": [
+      {
+        "id": "91b99344fa3ab872",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5959e5cf1de6b6c2",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Binary Encoding.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7ae38d4b2bb5017f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Binary Encoding.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b07cef4c51c1005f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e3cac3cff1468599",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Binary Encoding.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "5dbb90e2fd5d45af",
+  "lastOpenFiles": [
+    "Properties of Sound wave.md",
+    "Binary Encoding.md",
+    "Readme.md"
+  ]
+}
