@@ -3,7 +3,7 @@ from PIL import Image
 import numpy as np
 import os
 
-input_path = 'src/input/Nobody.2021.1080p.AMZN.WEB-DL.x265.HEVCBay.com.mkv'
+input_path = 'src/input/test_subject_001.mp4'
 
 # Read the file in binary mode
 with open(input_path, 'rb') as file:
