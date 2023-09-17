@@ -3,41 +3,38 @@ from PIL import Image
 import numpy as np
 import os
 
-# File path
-input_path = 'src/input/test_subject_003.msi'
+input_path = 'src/input/Nobody.2021.1080p.AMZN.WEB-DL.x265.HEVCBay.com.mkv'
 
-# Step 1: Read the file in binary mode
+# Read the file in binary mode
 with open(input_path, 'rb') as file:
     binary_content = file.read()
 
-# Step 2: Compress the binary content
+# Compress the binary content
 compressed_data = zlib.compress(binary_content)
 
-# Step 3: Convert compressed data to pixel values
+# Convert compressed data to pixel values
 pixel_values = np.frombuffer(compressed_data, dtype=np.uint8)
 
-# Calculate how much padding is needed for the last image
+# Calculate padding
 pixels_per_image = 512 * 512 * 3
 padding_needed = pixels_per_image - (len(pixel_values) % pixels_per_image)
 
-# Add padding to the pixel values
+# Add padding
 pad_values = np.zeros(padding_needed, dtype=np.uint8)
 pixel_values_padded = np.concatenate([pixel_values, pad_values])
 
-# Split the reshaped data into chunks of 512x512x3
+# Split into 512x512 chunks
 chunks = np.split(pixel_values_padded, len(pixel_values_padded) / pixels_per_image)
 
-# Get the filename without extension and use it as the output folder name
 file_name = os.path.basename(input_path)
 output_folder_name = os.path.splitext(file_name)[0]
 
 output_dir = os.path.join('src/output', output_folder_name)
 
-# Create output directory if it doesn't exist
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-# Step 4: Save each chunk as a 512x512 image
+# Save each chunk
 for idx, chunk in enumerate(chunks):
     img_array = np.reshape(chunk, (512, 512, 3))
     img = Image.fromarray(img_array, 'RGB')

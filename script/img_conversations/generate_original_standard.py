@@ -4,7 +4,7 @@ import zlib
 import os
 
 # Step 1: Load each image in the order they were saved
-image_folder = 'src/output/test_subject_003'
+image_folder = 'src/output/extracted_frames'
 image_files = sorted(os.listdir(image_folder), key=lambda x: int(x.split('_')[-1].split('.')[0]))
 
 all_pixel_values = []
@@ -30,5 +30,5 @@ compressed_data_bytes = all_pixel_values.tobytes()
 original_data = zlib.decompress(compressed_data_bytes)
 
 # Step 4: Save the decompressed data as the original file
-with open('src/output/reconstructed_test_subject_003.msi', 'wb') as file:
+with open('src/output/reconstructed_test_subject_001.mp4', 'wb') as file:
     file.write(original_data)
